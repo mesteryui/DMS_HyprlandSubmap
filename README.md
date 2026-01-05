@@ -5,7 +5,3 @@ This is an implementation to see the current hyprland Submap where you are I use
 ## Examples of bar
 ![The bar with a resize submap](image_2025-12-24_20-47-31.png)
 ![The bar with a passthrough submap](hyprlandSubmapPassthroughExample.png)
-
-
-
-
