@@ -12,13 +12,13 @@ PluginComponent {
     visible: isNotDefault
     Connections {
             target: Hyprland
-
+        
             function onRawEvent(event) {
             // Captura eventos de submapa de Hyprland
               if (event.name === "submap") {
                 // El data contiene el nombre del submapa
                 const submapName = event.data.trim()
-
+                
                 if (submapName && submapName !== "") {
                     root.displayText = submapName
 		    root.isNotDefault = true
@@ -37,7 +37,7 @@ PluginComponent {
 	      sourceComponent: StyledText {
                 visible: isNotDefault
                 text: root.displayText
-
+	        
                 font.pixelSize: Theme.fontSizeMedium
                 color: Theme.surfaceText
                 anchors.verticalCenter: parent.verticalCenter
